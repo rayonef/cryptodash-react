@@ -105,7 +105,9 @@ export class AppProvider extends React.Component {
     this.setState({
       firstVisit: false,
       page: 'dashboard',
-      currentFavorite
+      currentFavorite,
+      prices: null,
+      historical: null
     }, () => {
       this.fetchPrices();
       this.fetchHistorical();
